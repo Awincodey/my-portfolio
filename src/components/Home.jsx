@@ -82,9 +82,9 @@ function Home() {
               Let's Connect!
             </button>
             <a href="/AWIN.pdf" download="AWIN.pdf">
-              <button className="cta-button download-button">
-                Download CV 📄
-              </button>
+  <button className="cta-button download-button">
+    Download CV 📄
+  </button>
             </a>
           </div>
         </div>
