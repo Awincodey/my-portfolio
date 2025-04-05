@@ -1,0 +1,64 @@
+/* Footer Section */
+.footer {
+    background-color: #121212;  /* Dark background to match your website */
+    color: #f8f8f8;
+    padding: 1rem 1rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  .footer-content p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .social-links a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  /* Kulay para sa bawat platform */
+  .social-links .linkedin {
+    color: white; /* LinkedIn Blue */
+  }
+  
+  .social-links .email {
+    color: white; /* Gmail Red */
+  }
+  
+  .social-links .facebook {
+    color: white; /* Facebook Blue */
+  }
+  
+  /* Hover effect - darken color slightly */
+  .social-links .linkedin:hover {
+    color: #084a8e;
+  }
+  
+  .social-links .email:hover {
+    color: #a13628;
+  }
+  
+  .social-links .facebook:hover {
+    color: #1256a0;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .footer-content p {
+      font-size: 1rem;
+    }
+  
+    .social-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

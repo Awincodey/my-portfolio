@@ -1,0 +1,347 @@
+/* Hero Section */
+.hero {
+  position: relative; /* Required for overlay positioning */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('/bg5.png'); /* Your image path */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Keeps the image centered */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  color: white;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: ""; /* Required to create the overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.815); /* Black overlay with 50% transparency */
+
+} 
+  .hero-content {
+    max-width: 50%;
+    padding: 2rem;
+
+  }
+  
+  .hero-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content p {
+    padding-bottom: 30px;
+  }
+  
+  /* Typing Animation Effect */
+  .typing-effect {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-right: 2px solid white;
+    width: 0; /* Start with 0 width */
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 5s steps(20) 1s infinite, blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0; /* Start typing from the beginning */
+    }
+    100% {
+      width: 19ch; /* Exact length of "I'm a Web Designer" */
+    }
+  }
+  
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  /* Hover Effect on Image */
+  .hero-image {
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero-image img {
+    width: 250px; /* Adjust the size of the image */
+    height: 250px; /* Adjust the height to match */
+    border-radius: 50%; /* Circular image */
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for zoom and shadow */
+  }
+  
+  .hero-image img:hover {
+    transform: scale(1.2) translateY(-15px); /* Zoom in and move the image up */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3); /* Add shadow around the image */
+  }
+  
+
+  /* Hero Buttons Container */
+.hero-buttons {
+  display: flex;
+  gap: 15px; /* Space between buttons */
+  margin-top: 20px;
+}
+  /* CTA Button */
+  
+  .cta-button {
+    padding: 1rem 2rem;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  /* Hover Effect */
+  .cta-button:hover {
+    
+    transform: translateY(-10px);
+  }
+  
+  /* Make buttons responsive */
+  @media (max-width: 768px) {
+    .hero-buttons {
+      flex-direction: column; /* Stack buttons on mobile */
+      align-items: center;
+    }
+    
+    .cta-button {
+      width: 100%; /* Full width for better mobile UI */
+    }
+    
+    .hero-content {
+      text-align: center;
+    }
+    
+    .hero-image img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+  /* ABOUT */
+
+/* About Section */
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212;
+  color: #f8f8f8;
+  padding-bottom: 5%;
+  padding-top: 7%;
+  
+  
+}
+
+/* Content Layout */
+.About-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  max-width: 1200px;
+  gap: 2rem;
+}
+
+/* Image Section */
+.About-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.About-image img {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.1);
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.About-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 15px 40px rgba(255, 255, 255, 0.15);
+}
+
+/* Text Section */
+.About-text {
+  flex: 2;
+  padding: 2rem;
+}
+
+.About-text h1 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+.About-text p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #d1d1d1;
+  letter-spacing: 0.6px;
+  margin-bottom: 1.5rem;
+}
+
+/* Details Styling */
+
+
+
+
+/* CONTACT PAGE*/
+
+/* CONTACT SECTION */
+.contact-section {
+  position: relative; /* Required for the overlay positioning */
+  background-image: url('/background.webp'); /* Your image path */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Keeps the image centered */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  color: white; /* Text color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.contact-section::before {
+  content: ""; /* Required for the overlay */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.815); /* Black overlay with 50% transparency */
+  
+}
+
+
+.contact-container h1 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.contact-form .form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form .form-group textarea {
+  resize: vertical;
+  height: 120px;
+}
+
+.submit-button {
+  background-color: white;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  transform: scale(1.05);
+}
+
+
+/* Fade-up Animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Logo Carousel Section */
+.carousel-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+  background: #121212;
+  padding-bottom: 5%;
+}
+
+.carousel-logo {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: auto;
+  filter: grayscale(50%);
+  transition: transform 0.1s ease-in-out, filter 0.2s ease-in-out;
+}
+
+.carousel-logo:hover {
+  transform: scale(1.0);
+  filter: grayscale(0%);
+}
+
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
