@@ -81,7 +81,7 @@ function Home() {
             >
               Let's Connect!
             </button>
-            <a href="/AWIN.pdf" download="AWIN.pdf">
+            <a href="https://awincodey.github.io/my-portfolio/AWIN.pdf">
               <button className="cta-button download-button">
                 Download CV 📄
               </button>
